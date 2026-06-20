@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proyectos — Evelin Calderón</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo"></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Sobre mi</a></li>
+        <li><a href="proyectos.html" class="active">Proyectos</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ========== PAGE HERO ========== -->
+  <div class="page-hero">
+    <div class="container">
+      <h1>Mis Proyectos</h1>
+      <p>Proyectos destacados en los que he trabajado.</p>
+    </div>
+  </div>
+
+  <!-- ========== GRID DE PROYECTOS ========== -->
+  <section class="projects-section">
+    <div class="container">
+      <div class="projects-grid">
+
+        
+        <!-- PROYECTO 1 — placeholder para TFG -->
+        <a href="proyecto-analisis-nintendo.html" class="project-card fade-in">
+          <div class="project-card-top">
+            <span class="project-icon">🎮</span>
+          </div>
+          <h3>Nintendo Switch 2: Análisis de sentimientos</h3>
+          <p>
+            Análisis de las opiniones de varios usuarios con la salida de la consola de videojuegos
+            de Nintendo Switch 2.
+          </p>
+          <div class="skill-tags">
+            <span class="tag">Python</span>
+            <span class="tag">PowerBI</span>
+            <span class="tag">MongoDB</span>
+            <span class="tag">SQL Server</span>
+          </div>
+          <div class="project-card-footer">
+            <span class="project-link">
+              Ver detalle
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </span>
+            <span style="font-size:0.78rem; color:var(--text-muted);">2025</span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-copy"><span>Evelin Calderón</span></p>
+        <div class="footer-links">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
